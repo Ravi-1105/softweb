@@ -1,6 +1,6 @@
 # Ex.07 Software Product Company Website
 ## Date:
-
+12.05.2024
 ## AIM:
 To develop a static company website to display the softwares and services provided by the company.
 
@@ -29,7 +29,6 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
-home.html
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +55,7 @@ home.html
                 justify-content: space-between;
             }
             .logo {
-                color: #fb0b0b;
+                color: #6fa1f8;
                 font-size: 40px;
                 font-weight: 700;
                 letter-spacing: 3px;
@@ -92,7 +91,7 @@ home.html
                 padding: 5px 20px;
                 color: white;
                 border-radius: 10px;
-                background: #00d5ff;
+                background: #6fa1f8;
                 cursor: pointer;
             }
             .navbar li {
@@ -110,7 +109,7 @@ home.html
                 border: 1px;
                 padding: 10px;
                 color: white;
-                background-color: #00d5ff;
+                background-color: #6fa1f8;
                 transition: 0.5s; 
                 cursor: pointer;
                 border-radius: 30px;
@@ -138,42 +137,41 @@ home.html
             }
             .login {
                 margin: 0px 10px;
-                border: 2px solid #00d5ff;
+                border: 2px solid #6fa1f8;
                 padding: 13px 35px;
                 letter-spacing: 1px;
                 color: white;
                 border-radius: 30px;
-                background-color: #00d5ff;
+                background-color: #6fa1f8;
                 text-decoration: none;
             }
             .login:hover {
-                border: 2px solid #00d5ff;
-                color:  #00d5ff;
+                border: 2px solid #6fa1f8;
+                color: #6fa1f8;
                 background-color: white;
                 transition: 0.5s;
                 cursor: pointer;
             } 
             .signup {
                 margin: 0px 10px;
-                border: 2px solid #00d5ff;
+                border: 2px solid #6fa1f8;
                 padding: 13px 35px;
                 letter-spacing: 1px;
                 color: white;
                 border-radius: 30px;
-                background-color: #00d5ff;
+                background-color: #6fa1f8;
                 text-decoration: none;
             }
             .signup:hover {
-                border: 2px solid #f60b0b;
-                color: #00d5ff;
+                border: 2px solid #6fa1f8;
+                color: #6fa1f8;
                 background-color: white;
                 transition: 0.5s;
                 cursor: pointer;
             }
             footer {
-                background-color: #94f60b;
+                background-color: #6fa1f8;
                 margin-top: auto;
-                font-size: 20px;
             }
         </style>
     </head>
@@ -181,11 +179,11 @@ home.html
     <div class="banner">
         <br>
         <div class="navbar">
-            <h1 class="logo">C<span>ode</span>W<span>ars</span></h1>
+            <h1 class="logo">I<span>nfiniti</span>T<span>ech</span></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/product.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/person.html"> Person </a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -195,10 +193,9 @@ home.html
         </div>
         <div class="content">
             <div class="text">
-                <h2> Achieve mastery
-                    through challenge</h2>
+                <h2> Software Development Company </h2>
                 <br>
-                <p> Improve your development skills by training with your challenge and push your coding practice.                </p>
+                <p> Welcome to InfinitiTech, your gateway to cutting-edge software solutions and innovative web development applications! </p>
                 <br>
                 <div>
                     <a href="#" class="login"> Log In </a>
@@ -208,11 +205,184 @@ home.html
         </div>  
     </div>
     <footer>
-        <center> Designed and Developed by NITHISH R (23006406) </center>
+        <center> Designed and Developed by RAVIVARMAN (212223100044) </center>
     </footer>
 </body>
 </html>
-product.html
+
+
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> person page </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .bg-person {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: #6fa1f8;
+                border-radius: 30px;
+            }
+            .logo {
+                color: #6fa1f8;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: white;
+                border-radius: 10px;
+                background: #6fa1f8;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: #6fa1f8;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .image {
+                position: relative;
+                border: 0;
+                top: 70px;
+                background: transparent;
+            }
+            .image table {
+                border: 0;
+                color: white;
+                position: relative;
+                left: 150px;
+            }
+            .image table img {
+                height: 140px;
+                width: 140px;
+                border: 2px solid white;
+                padding: 5px;
+                border-radius: 50%;
+            }
+            .image table td {
+                color: #6fa1f8;
+            }
+            footer {
+                background-color: #6fa1f8;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">I<span>nfiniti</span>T<span>ech</span></h1>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
+                <li><a href="http://127.0.0.1:8000/static/product.html"> Products </a></li>
+                <li><a href="http://127.0.0.1:8000/static/person.html" class="bg-person"> person </a></li>
+                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="image">
+            <table cellspacing="20"> 
+                <tr align="center">
+                    <td> <img src="ME.jpg"> </td>
+                    <td> <img src="sundhar.jpeg"> </td>
+                    <td> <img src="steve.jpeg"> </td>
+                    <td> <img src="musk.jpeg"> </td>
+                    <td> <img src="markzub.jpeg"> </td>
+                    <td> <img src="jeff.jpeg"> </td>
+                </tr>
+                <tr align="center">
+                    <th> Ravivarman </th>
+                    <th> Sundhar Pichai </th>
+                    <th> Steve Jobs </th>
+                    <th> Elon Musk </th>
+                    <th> Mark Zuckerberg </th>
+                    <th> Jeff Bezos </th>
+                </tr>
+                <tr align="center">
+                    <td> CEO </td>
+                    <td> CEO, Co-Founder </td>
+                    <td> CTO, Co-Founder </td>
+                    <td> Director </td>
+                    <td> Asst. Director </td>
+                    <td> Dy. Director </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <center> Designed and Developed by RAVIVARMAN(212223100044) </center>
+    </footer>
+</body>
+</html>
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -242,11 +412,11 @@ product.html
                 border: 1px;
                 padding: 10px;
                 color: white;
-                background-color:  #00d5ff;
+                background-color: #6fa1f8;
                 border-radius: 30px;
             }
             .logo {
-                color:  #fb0b0b;
+                color: #6fa1f8;
                 font-size: 40px;
                 font-weight: 700;
                 letter-spacing: 3px;
@@ -282,7 +452,7 @@ product.html
                 padding: 5px 20px;
                 color: white;
                 border-radius: 10px;
-                background:  #00d5ff;
+                background: #6fa1f8;
                 cursor: pointer;
             }
             .navbar li {
@@ -300,7 +470,7 @@ product.html
                 border: 1px;
                 padding: 10px;
                 color: white;
-                background-color:  #00d5ff;
+                background-color: #6fa1f8;
                 transition: 0.5s; 
                 cursor: pointer;
                 border-radius: 30px;
@@ -313,7 +483,7 @@ product.html
             .container .box-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-                gap: 100px;
+                gap: 20px;
             }
             .container .box-container .box {
                 color: white;
@@ -327,10 +497,10 @@ product.html
                 height: 70px;
                 border-radius: 20px;
             }
-            .container .box-container .box h3 {
-                color:  #00d5ff;
+            .container .box-container .box h2 {
+                color: #6fa1f8;
                 font-size: large;
-                padding: 20px 0;
+                padding: 10px 0;
             }
             .container .box-container .box p {
                 color: white;
@@ -338,9 +508,8 @@ product.html
                 line-height: 1.5;
             }
             footer {
-                background-color: #94f60b;
+                background-color: #6fa1f8;
                 margin-top: auto;
-                font-size: 20px;
             }
         </style>
     </head>
@@ -348,11 +517,11 @@ product.html
     <div class="banner">
         <br>
         <div class="navbar">
-            <h1 class="logo">C<span>ode</span>W<span>ars</span></h1>
+            <h1 class="logo">I<span>nfiniti</span>T<span>ech</span></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/product.html" class="bg-product"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/person.html"> person </a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -363,250 +532,80 @@ product.html
         <div class="container">
             <div class="box-container">
                 <div class="box">
-                    <img src="C.jpg" alt="">
-                    <h3> C </h3>
-                    <p> C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972. </p>
+                    
+                    <h2> CodeForge Pro 
+                    </h2>
                 </div>
                 <div class="box">
-                    <img src="c++.jpg" alt="">
-                    <h3> C++ </h3>
-                    <p>  C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                   
+                    <h2> SiteGenie Builder </h2>
                 </div>
                 <div class="box">
-                    <img src="js.png" alt="">
-                    <h3> JAVASCRIPT </h3>
-                    <p> JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. I </p>
+                    
+                    <h2> DevSync Hub Pro </h2>
                 </div>
                 <div class="box">
-                    <img src="php.jpg" alt="">
-                    <h3> PHP</h3>
-                    <p> PHP is a server side scripting language that is embedded in HTML. </p>
+                    
+                    <h2> WebOptiMate Suite </h2>
                 </div>
                 <div class="box">
-                    <img src="PYTHON.jpg" alt="">
-                    <h3> PYTHON </h3>
-                    <p> Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. </p>
+                   
+                    <h2> CodeLeap Toolkit </h2>
                 </div>
                 <div class="box">
-                    <img src="sql.jpeg" alt="">
-                    <h3> SQL </h3>
-                    <p> SQL is a standard language for accessing and manipulating databases. </p>
+                    
+                    <h2> SiteGuard Pro Shield  </h2>
                 </div>
                 <div class="box">
-                    <img src="shell.jpeg" alt="">
-                    <h3> SHELL </h3>
-                    <p> Shell can be accessed by users using a command line interface.  </p>
+                    
+                    <h2> WebFlow Pro Studio </h2>
                 </div>
                 <div class="box">
-                    <img src="c ash.jpg" alt="">
-                    <h3> C# </h3>
-                    <p> C# is used to develop web apps, desktop apps, mobile apps, games and much more.
-
-                    </p>
+                   
+                    <h2> DevInspect Test Kit </h2>
                 </div>
                 <div class="box">
-                    <img src="typescript.png" alt="">
-                    <h3>TYPESCRIPT</h3>
-                    <p> ypeScript is a syntactic superset of JavaScript which adds static typing. </p>
+                   
+                    <h2> SiteSphere CMS </h2>
                 </div>
                 <div class="box">
-                    <img src="f.png" alt="">
-                    <h3> F# </h3>
-                    <p> F# is an Open-source programming language with a lot of features.</p>
+                    
+                    <h2> CodeBoost Accelerator </h2>
                 </div>
                 <div class="box">
-                    <img src="swift.png" alt="">
-                    <h3> SWIFT</h3>
-                    <p> Swift, developed by Apple, is the go-to language for iOS and macOS app development.  </p>
+                    
+                    <h2> WebScale Pro Manager </h2>
                 </div>
                 <div class="box">
-                    <img src="go.jpg" alt="">
-                    <h3> GO </h3>
-                    <p> Go, also known as Golang, has gained attention for its efficiency, simplicity, and strong support for concurrent programming </p>
+                   
+                    <h2> DevSphere IDE Suite </h2>
+                </div>
+                <div class="box">
+                   
+                    <h2> CyPaWS </h2>
+                </div>
+                <div class="box">
+                   
+                    <h2> HawkEye Intrusion Detection System </h2>
+                </div>
+                <div class="box">
+                   
+                    <h2> Cyber Warning Receiver </h2>
+                </div>
+                <div class="box">
+                   
+                    <h2> Anvil Intrusion Prevention System </h2>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <center> Designed and Developed by NITHISH R (23006406) </center>
+        <center> Designed and Developed by RAVIVARMAN (212223100044) </center>
     </footer>
 </body>
 </html>
-people.html
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> people page </title>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .banner {
-                width: 100%;
-                height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            .navbar {
-                width: 85%;
-                margin: auto;
-                padding: 35px 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .bg-people {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #00d5ff;
-                border-radius: 30px;
-            }
-            .logo {
-                color: #fb0b0b;
-                font-size: 40px;
-                font-weight: 700;
-                letter-spacing: 3px;
-            }
-            span {
-                color: white;
-            }
-            form {
-                width: 300px;
-                height: 40px;
-                display: flex;
-                background: rgba(255, 255, 255, 0.2);
-                padding: 1px 1px;
-                font-size: 15px;
-                border-radius: 10px;
-                backdrop-filter: blur(4px) saturate(180%);
-            }
-            form input {
-                background: transparent;
-                flex: 1;
-                border: 0;
-                outline: none;
-                padding: 12px 20px;
-                font-size: 15px;
-                color: white;
-            } 
-            ::placeholder {
-                color: white;
-            }
-            form button {
-                border: 0;
-                outline: none;
-                padding: 5px 20px;
-                color: white;
-                border-radius: 10px;
-                background: #00d5ff;
-                cursor: pointer;
-            }
-            .navbar li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 20px;
-                position: relative;
-            }
-            .navbar li a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-            .navbar li:hover {
-                border: 1px;
-                padding: 10px;
-                color: white;
-                background-color: #00d5ff;
-                transition: 0.5s; 
-                cursor: pointer;
-                border-radius: 30px;
-            }
-            .image {
-                position: relative;
-                border: 0;
-                top: 150px;
-                
-                background: transparent;
-            }
-            .image table {
-                border: 0;
-                color: white;
-                position: relative;
-                left: 200px;
-                
-            }
-            .image table img {
-                height: 140px;
-                width: 140px;
-                border: 2px solid white;
-                padding: 5px;
-                border-radius: 50%;
-            }
-            .image table td {
-                color: #00d5ff;
-            }
-            footer {
-                background-color:#94f60b;
-                margin-top: auto;
-                font-size: 20px;
-            }
-        </style>
-    </head>
-<body>
-    <div class="banner">
-        <br>
-        <div class="navbar">
-            <h1 class="logo">C<span>ode</span>W<span>ars</span></h1>
-            <ul>
-                <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/product.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html" class="bg-people"> People </a></li>
-                <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
-            </ul>
-            <form action="" method="get">
-                <input type="text" placeholder="Enter to Search">
-                <button type="submit"> Search </button>
-            </form>
-        </div>
-        <div class="image">
-            <table cellspacing="20"> 
-                <tr align="center">
-                    <td> <img src="nithirc.jpg"> </td>
-                    <td> <img src="c founder.jpeg"> </td>
-                    <td> <img src="PYTHON FOUNDER.jpg"> </td>
-                    <td> <img src="SQL FOUNDER.jpeg"> </td>
-                    <td> <img src="JAVA FATHER.jpeg"> </td>
-                    <td> <img src="PHP FOUNDER.jpg"> </td>
-                </tr>
-                <tr align="center">
-                    <th> NITHISH </th>
-                    <th> Bjarne Stroustrup</th>
-                    <th> Guido van Rossum </th>
-                    <th> Donald D. Chamberlin </th>
-                    <th> James Gosling</th>
-                    <th> Rasmus Lerdorf</th>
-                </tr>
-                <tr align="center">
-                    <td> CEO </td>
-                    <td> C++, Co-Founder </td>
-                    <td> PYTHON, Co-Founder </td>
-                    <td> Sql,Co-Founder </td>
-                    <td> JAVA,Co-Founder </td>
-                    <td>  php,Co-Founder </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <footer>
-        <center> Designed and Developed by NITHISH R (23006406) </center>
-    </footer>
-</body>
-</html>
-contact.html
+
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -636,11 +635,11 @@ contact.html
                 border: 1px;
                 padding: 10px;
                 color: white;
-                background-color: #00d5ff;
+                background-color: #6fa1f8;
                 border-radius: 30px;
             }
             .logo {
-                color:#fb0b0b;
+                color: #6fa1f8;
                 font-size: 40px;
                 font-weight: 700;
                 letter-spacing: 3px;
@@ -676,7 +675,7 @@ contact.html
                 padding: 5px 20px;
                 color: white;
                 border-radius: 10px;
-                background: #00d5ff;
+                background: #6fa1f8;
                 cursor: pointer;
             }
             .navbar li {
@@ -694,7 +693,7 @@ contact.html
                 border: 1px;
                 padding: 10px;
                 color: white;
-                background-color: #00d5ff;
+                background-color: #6fa1f8;
                 transition: 0.5s; 
                 cursor: pointer;
                 border-radius: 30px;
@@ -718,7 +717,7 @@ contact.html
             .box-2 {
                 height: 400px;
                 width: 400px;
-                border: 3px solid #00d5ff;
+                border: 3px solid #6fa1f8;
                 border-radius: 20px;
                 background: transparent;
                 position: relative;
@@ -760,7 +759,7 @@ contact.html
                 padding: 10px 20px;
                 color: white;
                 border-radius: 30px;
-                background: #00d5ff;
+                background: #6fa1f8;
                 cursor: pointer;
                 position: relative;
                 top: 50px;
@@ -779,13 +778,12 @@ contact.html
                 padding: 10px 80px;
             }
             .box-2 span {
-                color: #00d5ff;
+                color: #6fa1f8;
                 font-size: 20px;
             }
             footer {
-                background-color: #94f60b;
+                background-color: #6fa1f8;
                 margin-top: auto;
-                font-size: 20px;
             }
         </style>
     </head>
@@ -793,11 +791,11 @@ contact.html
     <div class="banner">
         <br>
         <div class="navbar">
-            <h1 class="logo">C<span>ode</span>W<span>ars</span></h1>
+            <h1 class="logo">I<span>nfiniti</span>T<span>ech</span></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
                 <li><a href="http://127.0.0.1:8000/static/product.html"> Products </a></li>
-                <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/person.html"> person </a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html" class="bg-contact"> Contact </a></li>
             </ul>
             <form action="" method="get">
@@ -810,11 +808,11 @@ contact.html
                 <form>
                     <center>
                         <h1> Contact Us </h1>
-                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Name :">
                         <br>
-                        <input type="email" placeholder="Your Email">
+                        <input type="email" placeholder="Your Email :">
                         <br>
-                        <textarea rows="4" cols="40" placeholder="Your Message"> </textarea>
+                        <textarea rows="4" cols="40" >Your Message :</textarea>
                         <br>
                         <button type="submit"> Submit </button>
                     </center>
@@ -822,24 +820,26 @@ contact.html
             </div>
             <div class="box-2"> 
                 <h2> Contact Information </h2>
-                <p> <span>Address</span> : 1185/M 9th STREET THENDRAL NAGAR VENGIKKAL TIRUVANNAMALI </p>
-                <p> <span>Email</span> : nithirio3@gmail.com </p>
-                <p> <span>Phone</span> : 6369183394 </p>
+                <p> <span>Address</span> : No.69,Lester Sector, Bangalore,Bangalore PO,Karanataka</p>
+                <p> <span>Email</span> : ravivarman@gmail.com</p>
+                <p> <span>Phone</span> : 9600071425 </p>
             </div>
         </div>
     </div>
     <footer>
-        <center> Designed and Developed by NITHISH R (23006406) </center>
+        <center> Designed and Developed by RAVIVARMAN (212223100044) </center>
     </footer>
 </body>
 </html>
+
 ```
 
 ## OUTPUT:
-![ex6-op1](https://github.com/selvasachein/softweb/assets/139841688/4392122f-fde5-446f-bdc8-ccd70c4ebf7b)
-![ex6-op2](https://github.com/selvasachein/softweb/assets/139841688/230b56e7-25bf-44b5-85a9-abb7b91b5284)
-![ex6-op3](https://github.com/selvasachein/softweb/assets/139841688/35c16006-db82-44a6-ae98-a04b0badafba)
-![ex6-op4](https://github.com/selvasachein/softweb/assets/139841688/b7efa28d-c0ab-4b91-b4d3-db8ebfdada3b)
+![image](https://github.com/Ravi-1105/softweb/assets/139841688/90c31405-31ed-4d2c-908f-dce9ddfbec12)
+![image](https://github.com/Ravi-1105/softweb/assets/139841688/1b6bc4b7-2c8b-4966-b661-91293f2d4ebf)
+![image](https://github.com/Ravi-1105/softweb/assets/139841688/2110e78e-caf1-483b-935b-d538bac754c8)
+![image](https://github.com/Ravi-1105/softweb/assets/139841688/c14f1793-aa61-44a6-aba1-c6fba62bf534)
+
 
 
 ## RESULT:
